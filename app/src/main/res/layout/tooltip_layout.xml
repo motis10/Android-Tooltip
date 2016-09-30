@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/tooltip_margin_left_right"
+    android:layout_marginRight="@dimen/tooltip_margin_left_right"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/tooltip_layout_top_bottom_padding"
+    android:paddingLeft="@dimen/tooltip_layout_left_right_padding"
+    android:paddingRight="@dimen/tooltip_layout_left_right_padding"
+    android:paddingTop="@dimen/tooltip_layout_top_bottom_padding">
+
+    <TextView
+        android:id="@+id/tooltip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/tooltip_icon_margin"
+        android:background="@drawable/tooltip_arrow_up"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/tooltip_icon_margin"
+        android:background="@drawable/tooltip_arrow_down"
+        android:contentDescription="@null" />
+
+</FrameLayout>
